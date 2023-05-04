@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#18_lessons", "C#18_lessons\C#18_lessons.csproj", "{64092C9F-662C-498A-A708-B57A043F6243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#18_lessons", "C#18_lessons\C#18_lessons.csproj", "{64092C9F-662C-498A-A708-B57A043F6243}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XII_METHODS", "XII_METHODS", "{5D973604-EEFF-4A08-9DD5-58468B02B494}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -448,7 +448,6 @@ namespace C_18_lessons
             #endregion
 
             #region 2.Task :Homework Explenation:_Terminalda məzənnə idarəetmə sistemi_
-
             //string[] currencies = { "USD", "EUR", "RUB" };
             //decimal[] rates = { 1.70M, 1.82M, 0.02M };
             //Console.WriteLine("Available commands : ");
@@ -520,8 +519,6 @@ namespace C_18_lessons
             //        }
             //        if (!isCurrencyExists)
             //            Console.WriteLine("Specified code not found ");
-
-
 
 
             //    }
@@ -700,36 +697,124 @@ namespace C_18_lessons
             #endregion
 
             #region Tenth lesson "XII_Introduction to methods DRY,SRP,KISS priciples_
-            //string[] currencies = { "USD", "EUR", "RUB" };
-            //decimal[] currencRates = { 1.70M, 1.82M, 0.02M };
+            string[] currencies = { "USD", "EUR", "RUB" };
+            decimal[] Currencyrates = { 1.70M, 1.82M, 0.02M };
 
-            //string SHOW_CURRRENCY_RATES_COMMAND = "/show-currency-rates";
-            //string FIND_CURRENCY_RATE_BY_CODE = "/find-currency-rate-by-cod";
-            //string CALCULATE_AMOUNT_BY_CURRENCY_CODE = "/calculate-amount-by-currency-code";
-            //string EXIT_COMMAND = "exit";
-            //Console.WriteLine("Available commands : ");
-            //Console.WriteLine(SHOW_CURRRENCY_RATES_COMMAND);
-            //Console.WriteLine(FIND_CURRENCY_RATE_BY_CODE);
-            //Console.WriteLine(CALCULATE_AMOUNT_BY_CURRENCY_CODE);
-            //Console.WriteLine(EXIT_COMMAND);
-            //Console.WriteLine();
+            string SHOW_CURRENCY_RATES_COMMAND = "/show-recent-currency-rates";
+            string FIND_CURRENCY_RATE_BY_CODE = "/find-currency-rate-by-code";
+            string CALCULATE_AMOUNT_BY_CURRENCY_RATE_BY_CODE = "/calculate-amount-by-currecy-code";
+            string EXIT_COMMAND = "/exit";
 
-            //while (true)
-            //{
-            //    Console.WriteLine();
-            //    Console.WriteLine("Pls enter the command : ");
-            //    string command = Console.ReadLine();
-            //    Console.WriteLine();
-            //    if (command == SHOW_CURRRENCY_RATES_COMMAND)
-            //    {
-            //        ExecuteShowCurrencyRatesCommand(currencRates, currencies); //Method Call 
+            Console.WriteLine("Available commands : ");
+            Console.WriteLine(SHOW_CURRENCY_RATES_COMMAND);
+            Console.WriteLine(FIND_CURRENCY_RATE_BY_CODE);
+            Console.WriteLine(CALCULATE_AMOUNT_BY_CURRENCY_RATE_BY_CODE);
+            Console.WriteLine(EXIT_COMMAND);
+            Console.WriteLine();
 
-            //    }
-            //}
+            while (true)
+            {
+                Console.WriteLine("Pls enter the command :");
+                string command = Console.ReadLine();
+                Console.WriteLine();
+                if (command == SHOW_CURRENCY_RATES_COMMAND)
+                {
+                    ExecuteShowCurrencyRatesCommand(Currencyrates, currencies); // --> METHOD CALL 
+                }
+                else if (command == FIND_CURRENCY_RATE_BY_CODE)
+                {
+                    ExecuteFindCurrencyRateByCodeCommand(Currencyrates, currencies);
+                }
+                else if (command == CALCULATE_AMOUNT_BY_CURRENCY_RATE_BY_CODE)
+                {
+                    ExecuteCalculateAmountByCurrencyRateByCode(Currencyrates, currencies);
+                }
+                else if (command == EXIT_COMMAND)
+                {
+                    ExecuteExitCommand(command);
+                    break;
+                }
+                else { Console.WriteLine("Specified Command not found "); }
+            }
 
-           
-            #endregion
+
+            /// <summary>
+            /// Executes show currency rates functionality 
+            /// </summary>
+            /// <param name="Currencyrates"></param>
+            /// <param name="currencies"></param>  ---> Oz metinlerini elave ede bilersen.
+            /// Add to commit note
             
+            //static decimal[] GetCurrencyRates()
+            //{
+            //    return new[] { 1.70M, 1.82M, 0.02M };
+            //}
+            static void ExecuteShowCurrencyRatesCommand(decimal[] Currencyrates, string[] currencies)  // --> METHOD`S PARAMETERS
+            {
+                for (int idx = 0; idx < Currencyrates.Length; idx++)
+                { Console.WriteLine($"Currency : {currencies[idx]}, Rate : {Currencyrates[idx]}"); }
+
+                //int idx = 0;
+                //while (idx < currencyRates.Length)
+                //{
+                //  Console.WriteLine($"Currency : {currencies[idx]}, Rate : {currencyRates[idx]}");
+                //  idx++;
+                //}
+            }
+
+            static void ExecuteFindCurrencyRateByCodeCommand(decimal[] Currencyrates, string[] currencies)
+            {
+                //Console.WriteLine("CURRENCY RATES BY CODE");
+                //Console.Write("Pls enter code : ");
+                //string specifiedCode = Console.ReadLine();
+
+                bool isCurrencyExists = false; //flag 
+                Console.Write("Pls enter code : ");
+                string specifiedCode = Console.ReadLine();
+
+                for (int i = 0; i < currencies.Length; i++)
+                {
+                    string currentCode = currencies[i];
+                    decimal currentCodeRate = Currencyrates[i];
+
+                    if (currencies[i] == specifiedCode)
+                    {
+                        Console.WriteLine($"Code : {currentCode},Rate : {currentCodeRate} ");
+                        isCurrencyExists = true; //update flag 
+                        break;
+                    }
+                }
+                if (!isCurrencyExists) //check flag value 
+                    Console.WriteLine("Specified code not found ");
+            }
+
+            static void ExecuteCalculateAmountByCurrencyRateByCode(decimal[] Currencyrates, string[] currencies)
+            {
+                Console.Write("Pls enter amount in AZN : ");
+                decimal amount = Convert.ToDecimal(Console.ReadLine());
+
+                Console.Write("Pls enter code : ");
+                string specifiedCode = Console.ReadLine();
+                bool isCurrencyExists = false;
+                for (int i = 0; i < currencies.Length; i++)
+                {
+                    string currentCode = currencies[i];
+                    decimal currentCodeRate = Currencyrates[i];
+                    Console.WriteLine($"Amount in {currentCode} : {amount / currentCodeRate}");
+                    isCurrencyExists = true;
+                    break;
+                }
+                if (!isCurrencyExists)
+                    Console.WriteLine("Specified code not found ");
+            }
+
+            static void ExecuteExitCommand(string command)
+            {
+                Console.WriteLine("Thanks for using,bye-bye");
+            }
+
+            #endregion
+
             #region "XI_Eleventh lesson More_on_ARRAYS_"
             //
 
@@ -744,6 +829,11 @@ namespace C_18_lessons
             //{
             //    number = 98;
             //}
+
+
+
+
+
             #endregion
 
             #region "14. LEsson Pass by value and pass by reference"
@@ -762,5 +852,5 @@ namespace C_18_lessons
             #endregion
         }
     }
-
 }
+

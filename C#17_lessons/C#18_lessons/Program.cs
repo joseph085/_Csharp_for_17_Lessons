@@ -699,7 +699,6 @@ namespace C_18_lessons
             //Translation
             #endregion
 
-
             #region Tenth lesson "XII_Introduction to methods DRY,SRP,KISS priciples_
             //string[] currencies = { "USD", "EUR", "RUB" };
             //decimal[] currencRates = { 1.70M, 1.82M, 0.02M };
@@ -730,9 +729,6 @@ namespace C_18_lessons
 
            
             #endregion
-
-
-            
             
             #region "XI_Eleventh lesson More_on_ARRAYS_"
             //
@@ -750,8 +746,6 @@ namespace C_18_lessons
             //}
             #endregion
 
-
-
             #region "14. LEsson Pass by value and pass by reference"
 
 
@@ -759,17 +753,13 @@ namespace C_18_lessons
 
             #endregion
 
-
             #region 15 <=> 16 HOMEWORK EXERCISES
 
             #endregion
 
-
-
             #region  "17. Intro to OOP"
 
             #endregion
-
         }
     }
 

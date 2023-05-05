@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#18_lessons", "C#18_lesson
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XII_METHODS", "XII_METHODS", "{5D973604-EEFF-4A08-9DD5-58468B02B494}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More_on_ARRAYS_", "More_on_ARRAYS_\More_on_ARRAYS_.csproj", "{72FEB4DF-12CA-4433-B801-E86F81326FEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +19,16 @@ Global
 		{64092C9F-662C-498A-A708-B57A043F6243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64092C9F-662C-498A-A708-B57A043F6243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64092C9F-662C-498A-A708-B57A043F6243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72FEB4DF-12CA-4433-B801-E86F81326FEF} = {5D973604-EEFF-4A08-9DD5-58468B02B494}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21850C7C-C5C4-4B7C-9C57-6356543D1052}

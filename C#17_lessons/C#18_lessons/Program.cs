@@ -1075,13 +1075,56 @@ namespace C_18_lessons
             //DoSomething(numbers);
             //Print(numbers);
 
+            ///Next to Project HRManagementSystem added
+            ///
 
+            //foreach (var add in args) /// Compiled to while LOOP in IL
+            //{
+            //}
+            //while loop`un qisa versiyasidir.....
 
+            //string position = $"{"HR"},{"Audit"},{"Engineer"}";
+            //if (position == "HR") { return true; }
+            //if (position == "Audit") { return true; }
+            //if (position == "Engineer") { return true; }
+            //else { return false; }
 
+            //Console.WriteLine("Pls enter the command :");
+            //string command = Console.ReadLine();
+            //command = "HR";
+            //if (true) { Console.WriteLine("It`s correct position"); }
+            //command = "Audit";
+            //if (true) { Console.WriteLine("This`s work it`s very important."); }
+            //command = "Engineer";
+            //if (true) { Console.WriteLine("This`s job not so bad..."); }
+            //else { Console.WriteLine("Is not here position job"); }
+            //switch (command) //switch keys`dir bu 
+            //{
+            //    case "HR":
+            //        return true;
 
+            //    case "Audit":
+            //        true;
+
+            //    case "Engineer":
+            //        true;
+
+            //    default:
+            //        return false;
+
+            //}
+
+            //while (command != null)
+            //{
+            //    Console.WriteLine(command);
+            //    command = Console.ReadLine();
+            //}
             #endregion
 
             #region  "17. Intro to OOP"
+
+
+
 
             #endregion
         }

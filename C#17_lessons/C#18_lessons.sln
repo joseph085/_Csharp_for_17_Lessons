@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#18_lessons", "C#18_lesson
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XII_METHODS", "XII_METHODS", "{5D973604-EEFF-4A08-9DD5-58468B02B494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "More_on_ARRAYS_", "More_on_ARRAYS_\More_on_ARRAYS_.csproj", "{72FEB4DF-12CA-4433-B801-E86F81326FEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "More_on_ARRAYS_", "More_on_ARRAYS_\More_on_ARRAYS_.csproj", "{72FEB4DF-12CA-4433-B801-E86F81326FEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRManagementSystem", "HRManagementSystem\HRManagementSystem.csproj", "{8FADE852-181F-471B-AADB-679B844BCF89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72FEB4DF-12CA-4433-B801-E86F81326FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FADE852-181F-471B-AADB-679B844BCF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FADE852-181F-471B-AADB-679B844BCF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FADE852-181F-471B-AADB-679B844BCF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FADE852-181F-471B-AADB-679B844BCF89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

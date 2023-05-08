@@ -45,6 +45,40 @@
 
         //}
 
+        //static void Main(string[] args) 
+        //{
+        //    int[] code = { 1, 2, 3, 4, 5 };
+        //    Console.WriteLine($"Inside main before : {code[0]} ");
+        //    UpdateArray(ref code );
+        //    Console.WriteLine($"Inside main after : {code[0]}");
+        //}
+        //static void UpdateArray(ref int[] numbers) 
+        //{
+        //    numbers[0] = 35;
+        //    Console.WriteLine($"Inside main array before : {numbers[0]}");
 
+        //    Console.WriteLine($"Inside main array  after : {numbers[0]}");
+        //}
+
+        //static void Main(string[] args)
+        //{
+        //    int code = 09;
+        //    Console.WriteLine($"Inside main before : {code} ");
+        //    UpdateArray(out code);
+        //    Console.WriteLine($"Inside main after : {code}");
+        //}
+        //static void UpdateArray(out int numbers)
+        //{
+        //    numbers = 75;
+        //    Console.WriteLine($"Inside main array before : {numbers}");
+
+
+        //    Console.WriteLine($"Inside main array  after : {numbers}");
+        //}
+        static void Main(string[] args) 
+        {
+            
+
+        }
     }
 }

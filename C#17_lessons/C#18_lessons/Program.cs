@@ -3,6 +3,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml.Schema;
+using System.Net.Mail;
 
 namespace C_18_lessons
 {
@@ -1125,23 +1126,26 @@ namespace C_18_lessons
         //public class Person
         //{
         //    #region  "17. Intro to the OOP"
-        //    /// ==> This is INstance... That is, these are datafields...
-        //    /// 
-        //    //Program program = new Program();
+        //    //    /// ==> This is INstance... That is, these are datafields...
+        //    //    /// 
+        //    //    //Program program = new Program();
 
-        //    //public string firstName; 
-        //    //public string lastName;
-        //    //public int age;
-        //    //public string city;
-        //    //public string country;
-        //    //public string zipcode;
-        //    //public string title;
-        //    //public string description;
-        //    //public string fatherName;
-        //    //public string position;
-        //    //public string phoneNumber; 
+        //    //    //public string firstName; 
+        //    //    //public string lastName;
+        //    //    //public int age;
+        //    //    //public string city;
+        //    //    //public string country;
+        //    //    //public string zipcode;
+        //    //    //public string title;
+        //    //    //public string description;
+        //    //    //public string fatherName;
+        //    //    //public string position;
+        //    //    //public string phoneNumber; 
+        //    //Program  firstPerson = new Program();
+        //    //Person secondPerson = new Person();
+        //    //Person thirdPerson = firstPerson + secondPerson;
+
         //    #endregion
-
         //}
 
 

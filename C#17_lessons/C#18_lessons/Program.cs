@@ -882,19 +882,16 @@ namespace C_18_lessons
 
             string[] currencies = { "USD", "EUR", "RUB" };
             decimal[] Currencyrates = { 1.70M, 1.82M, 0.02M };
-
             string SHOW_CURRENCY_RATES_COMMAND = "/show-recent-currency-rates";
             string FIND_CURRENCY_RATE_BY_CODE = "/find-currency-rate-by-code";
             string CALCULATE_AMOUNT_BY_CURRENCY_RATE_BY_CODE = "/calculate-amount-by-currecy-code";
             string EXIT_COMMAND = "/exit";
-
             Console.WriteLine("Available commands : ");
             Console.WriteLine(SHOW_CURRENCY_RATES_COMMAND);
             Console.WriteLine(FIND_CURRENCY_RATE_BY_CODE);
             Console.WriteLine(CALCULATE_AMOUNT_BY_CURRENCY_RATE_BY_CODE);
             Console.WriteLine(EXIT_COMMAND);
             Console.WriteLine();
-
             while (true)
             {
                 Console.WriteLine("Pls enter the command :");
@@ -919,7 +916,6 @@ namespace C_18_lessons
                 }
                 else { Console.WriteLine("Specified Command not found "); }
             }
-
 
             /// <summary>
             /// Executes show currency rates functionality 
@@ -991,7 +987,10 @@ namespace C_18_lessons
                     //amount = Convert.ToDecimal(Console.ReadLine());
                     amountInput = Console.ReadLine();
 
-                } while (!TryConvert(amountInput,amount));
+                } 
+                ///Ref ve Out ile nece isleyir baxa bilersiz....
+                /*while (!TryConvert(amountInput, ref amount));*/
+                while (!TryConvert(amountInput, out amount));
 
                 string currencyCode = Console.ReadLine();
 
@@ -1026,19 +1025,34 @@ namespace C_18_lessons
                 Console.WriteLine();
             }
 
-            static bool TryConvert(string input, decimal amount)
+            //static bool TryConvert(string input, ref decimal amount)
+            //{
+            //    try
+            //    {
+            //        amount = int.Parse(input);
+            //        //Console.WriteLine("Shhhh New added amount");
+            //        return true;
+            //    }
+            //    catch (Exception)
+            //    {
+            //        return false;
+            //        ///Yeniden loopa girmesi ucun verilibdir throw
+            //        //throw;
+            //    }
+            //}
+
+            static bool TryConvert(string input, out decimal amount)
             {
+                decimal DEFAULT_AMOUNT_ = -1;
                 try
                 {
                     amount = int.Parse(input);
-                    //Console.WriteLine("Shhhh New added amount");
                     return true;
                 }
-                catch (Exception)
+                catch
                 {
+                    amount= DEFAULT_AMOUNT_;
                     return false;
-                    ///Yeniden loopa girmesi ucun verilibdir throw
-                    //throw;
                 }
             }
             #endregion

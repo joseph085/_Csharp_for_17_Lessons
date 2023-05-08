@@ -6,7 +6,7 @@ using System.Xml.Schema;
 
 namespace C_18_lessons
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -1121,13 +1121,33 @@ namespace C_18_lessons
             //}
             #endregion
 
-            #region  "17. Intro to OOP"
+        }
+        public class Person
+        {
+            #region  "17. Intro to the OOP"
+            /// ==> This is INstance... That is, these are datafields...
+            /// 
+            //Program program = new Program();
 
+            //public string firstName; 
+            //public string lastName;
+            //public int age;
+            //public string city;
+            //public string country;
+            //public string zipcode;
+            //public string title;
+            //public string description;
+            //public string fatherName;
+            //public string position;
+            //public string phoneNumber; 
 
 
 
             #endregion
+
         }
+
+
     }
 }
 
